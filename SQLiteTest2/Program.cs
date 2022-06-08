@@ -2,15 +2,22 @@
 {
     using System.ComponentModel.DataAnnotations;
     using System.Data.Entity;
+    using System.Data.SQLite;
+    using System.Linq;
     using SQLite.CodeFirst;
 
     internal class Program
     {
         static void Main()
         {
-            using (var db = new MyContext())
+            using (var db = new MyContext(@"Data Source=Test.sqlite"))
             {
-                var person = new Person { Id = 1, Name = "John" };
+                var person = new Person
+                {
+                    Id = db.Persons.Max(p => p.Id + 1),
+                    Name = "Jarrett"
+                };
+
                 db.Persons.Add(person);
                 db.SaveChanges();
             }
@@ -25,7 +32,8 @@
 
     class MyContext : DbContext
     {
-        public MyContext() : base("MyContext")
+        public MyContext(string connectionString)
+            : base(new SQLiteConnection { ConnectionString = connectionString }, true)
         {
         }
 
