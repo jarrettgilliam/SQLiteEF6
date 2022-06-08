@@ -8,8 +8,8 @@
         <ProjectGuid>{203EB287-B4C0-4318-A864-743830B875A3}</ProjectGuid>
         <OutputType>Exe</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>SQLiteTest2</RootNamespace>
-        <AssemblyName>SQLiteTest2</AssemblyName>
+        <RootNamespace>SQLiteTest</RootNamespace>
+        <AssemblyName>SQLiteTest</AssemblyName>
         <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
         <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

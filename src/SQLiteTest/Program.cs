@@ -10,11 +10,16 @@
     {
         static void Main()
         {
-            using (var db = new MyContext(@"Data Source=Test.sqlite"))
+            var builder = new SQLiteConnectionStringBuilder
+            {
+                DataSource = "Test.sqlite"
+            };
+
+            using (var db = new MyContext(builder.ToString()))
             {
                 var person = new Person
                 {
-                    Id = db.Persons.Max(p => p.Id + 1),
+                    Id = db.Persons.Max(p => p.Id) + 1,
                     Name = "Jarrett"
                 };
 
