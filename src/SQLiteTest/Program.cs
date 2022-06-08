@@ -1,4 +1,4 @@
-﻿namespace SQLiteTest2
+﻿namespace SQLiteTest
 {
     using System.ComponentModel.DataAnnotations;
     using System.Data.Entity;
