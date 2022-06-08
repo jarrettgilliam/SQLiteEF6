@@ -10,10 +10,10 @@
     public class LocalCachingDBContext : DbContext
     {
         public const string LocalCacheDirectory = "LocalCache";
-        public const string LocalCacheFileName = "LocalCaching.sdf";
+        public const string LocalCacheFileName = "LocalCaching.sqlite";
 
         public LocalCachingDBContext(string connectionString)
-            : base(new SQLiteConnection() { ConnectionString = connectionString}, true)
+            : base(new SqliteConnection() { ConnectionString = connectionString}, true)
         {
         }
 

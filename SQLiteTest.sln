@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLiteTest", "SQLiteTest\SQLiteTest.csproj", "{21842242-7A77-4C09-B034-3447E235C6B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLiteTest2", "SQLiteTest2\SQLiteTest2.csproj", "{203EB287-B4C0-4318-A864-743830B875A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{21842242-7A77-4C09-B034-3447E235C6B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21842242-7A77-4C09-B034-3447E235C6B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21842242-7A77-4C09-B034-3447E235C6B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{203EB287-B4C0-4318-A864-743830B875A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{203EB287-B4C0-4318-A864-743830B875A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{203EB287-B4C0-4318-A864-743830B875A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{203EB287-B4C0-4318-A864-743830B875A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
