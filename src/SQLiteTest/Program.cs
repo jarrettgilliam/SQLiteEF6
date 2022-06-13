@@ -38,7 +38,7 @@
     class MyContext : DbContext
     {
         public MyContext(string connectionString)
-            : base(new SQLiteConnection { ConnectionString = connectionString }, true)
+            : base(new SQLiteConnection(connectionString), true)
         {
         }
 
